@@ -1,0 +1,12 @@
+{
+	"version": "2.0.0",
+	"tasks": [
+		{
+			"type": "shell",
+			"label": "CMake Build",
+			"command": "/bin/make",
+			"args": ["unix-debug"],
+			"group": "build"
+		}
+	]
+}

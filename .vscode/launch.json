@@ -1,0 +1,24 @@
+{
+	"version": "0.2.0",
+	"configurations": [
+		{
+			"name": "Vscode GDB Configuration",
+			"type": "cppdbg",
+			"request": "launch",
+			"preLaunchTask": "CMake Build",
+			"program": "${workspaceRoot}/Build/bin/${fileBasenameNoExtension}",
+			"stopAtEntry": false,
+			"cwd": "${workspaceFolder}",
+			"externalConsole": false,
+			"MIMode": "gdb",
+			"setupCommands": [
+				{
+					"description": "Enable pretty-printing for gdb",
+					"text": "-enable-pretty-printing",
+					"ignoreFailures": true
+				}
+			],
+			"miDebuggerPath": "/usr/bin/gdb"
+		}
+	]
+}
